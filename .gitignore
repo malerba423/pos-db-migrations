@@ -1,5 +1,4 @@
 node_modules
 
-knexfile.js
 knexfile.test.js
 knexfile.production.js
