@@ -1,1 +1,4 @@
 node_modules
+
+knexfile.test.js
+knexfile.production.js
