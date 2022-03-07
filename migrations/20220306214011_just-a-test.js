@@ -1,7 +1,7 @@
 exports.up = function (knex) {
   return Promise.all([
     knex.raw(`      
-      ALTER TABLE items ADD COLUMN just_a_test_column TEXT;
+      ALTER TABLE foodtruck.items ADD COLUMN just_a_test_column TEXT;
     `),
   ]);
 };
@@ -9,7 +9,7 @@ exports.up = function (knex) {
 exports.down = function (knex) {
   return Promise.all([
     knex.raw(`
-      ALTER TABLE items DROP COLUMN just_a_test_column;
+      ALTER TABLE foodtruck.items DROP COLUMN just_a_test_column;
     `),
   ]);
 };
